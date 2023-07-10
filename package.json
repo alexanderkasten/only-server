@@ -1,0 +1,26 @@
+{
+  "name": "only-server",
+  "version": "0.0.1",
+  "description": "This is a marker package to indicate that a module can only be used in Server Components or NodeJS environment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": ["index.js", "empty.js"],
+  "keywords": [
+    "react",
+    "node",
+    "nodejs",
+    "only",
+    "server"
+  ],
+  "author": "alexanderkasten",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "react-server": "./empty.js",
+      "node": "./empty.js",
+      "default": "./index.js"
+    }
+  }
+}
